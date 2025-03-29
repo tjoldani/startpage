@@ -7,14 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Start</title>
     <style>
+      :root {
+        color-scheme: dark light;
+        --bg: #1a1b26;
+        --fg: #c0caf5;
+        --link: #7aa2f7;
+        --link-hover: #bb9af7;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f4f4f4;
+          --fg: #1a1b26;
+          --link: #2b6cb0;
+          --link-hover: #805ad5;
+        }
+      }
+
       body {
-        font-family: system-ui, sans-serif;
+        background-color: var(--bg);
+        color: var(--fg);
+        font-family: "Fira Code", "JetBrains Mono", system-ui, sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #111;
-        color: #eee;
         margin: 0;
       }
 
@@ -29,32 +46,16 @@
 
       a {
         text-decoration: none;
-        color: #00bfff;
+        color: var(--link);
         font-size: 1.25rem;
         transition: color 0.2s ease;
       }
 
       a:hover {
-        color: #66d9ef;
-      }
-
-      @media (prefers-color-scheme: light) {
-        body {
-          background-color: #f4f4f4;
-          color: #111;
-        }
-
-        a {
-          color: #007acc;
-        }
-
-        a:hover {
-          color: #005fa3;
-        }
+        color: var(--link-hover);
       }
     </style>
   </head>
-
   <body>
     <ul>
       <li>
