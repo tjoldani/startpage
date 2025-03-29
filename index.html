@@ -1,19 +1,78 @@
 <!doctype html>
-<meta charset="utf-8" />
-<meta name="color-scheme" content="dark light" />
-<meta name="robots" content="noindex" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Start</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Start</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #111;
+        color: #eee;
+        margin: 0;
+      }
 
-<style></style>
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
 
-<body>
+      a {
+        text-decoration: none;
+        color: #00bfff;
+        font-size: 1.25rem;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: #66d9ef;
+      }
+
+      @media (prefers-color-scheme: light) {
+        body {
+          background-color: #f4f4f4;
+          color: #111;
+        }
+
+        a {
+          color: #007acc;
+        }
+
+        a:hover {
+          color: #005fa3;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
     <ul>
-        <li><a href="http://192.168.1.6:8123/dashboard-home/Overview" target="_blank">Home</a></li>
-        <li><a href="https://www.chatgpt.com" target="_blank">ChatGPT</a></li> 
-        <li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
-        <li><a href="https://feedly.com/i/my/me" target="_blank">Feedly</a></li>
-        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-        <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a></li>
+      <li>
+        <a
+          href="http://192.168.1.6:8123/dashboard-home/Overview"
+          target="_blank"
+          >Home</a
+        >
+      </li>
+      <li><a href="https://www.chatgpt.com" target="_blank">ChatGPT</a></li>
+      <li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+      <li><a href="https://feedly.com/i/my/me" target="_blank">Feedly</a></li>
+      <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+      <li>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+          >Gmail</a
+        >
+      </li>
     </ul>
-</body>
+  </body>
+</html>
