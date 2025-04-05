@@ -27,7 +27,6 @@ ul {
 }
 
 li {
-  border: 1px solid red;
   text-align: center;
   flex: 0 1 130px;
 }
