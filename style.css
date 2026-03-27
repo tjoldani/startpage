@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #1a1b26;
-  color: #c0caf5;
+  background-color: #20212a;
+  color: #bfc9f5;
   font-family: Inter, sans-serif;
   font-size: 1.5rem;
   display: flex;
@@ -33,13 +33,13 @@ li {
 
 a {
   text-decoration: none;
-  color: #c0caf5;
+  color: #bfc9f5;
   transition: color 0.8s ease;
 }
 
 a:hover,
 a:focus {
-  color: #7aa2f7;
+  color: #ff747e;
   outline: none;
 }
 
