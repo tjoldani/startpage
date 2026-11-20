@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #20212a;
-  color: #bfc9f5;
+  background-color: #262b32;
+  color: #e2ded7;
   font-family: Inter, sans-serif;
   font-size: 1.5rem;
   display: flex;
@@ -33,18 +33,18 @@ li {
 
 a {
   text-decoration: none;
-  color: #bfc9f5;
+  color: #e2ded7;
   transition: color 0.8s ease;
 }
 
 a:hover,
 a:focus {
-  color: #ff747e;
+  color: #d5b784;
   outline: none;
 }
 
 a:focus-visible {
-  outline: 2px solid #7aa2f7;
+  outline: 2px solid #d5b784;
   outline-offset: 4px;
   border-radius: 2px;
 }
