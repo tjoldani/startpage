@@ -45,7 +45,7 @@ body {
   color: var(--text);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Helvetica, Arial, sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.6rem;
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
@@ -64,7 +64,7 @@ body {
 .time {
   color: var(--text-bright);
   font-family: Fraunces, serif;
-  font-size: 5rem;
+  font-size: 5.75rem;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.01em;
@@ -73,7 +73,7 @@ body {
 
 .date {
   color: var(--text-soft);
-  font-size: 1.2rem;
+  font-size: 1.45rem;
   font-weight: 400;
   margin-top: 0.6rem;
 }
@@ -148,7 +148,7 @@ a:focus-visible {
 
 @media (max-width: 600px) {
   body {
-    font-size: 2.25rem;
+    font-size: 1.85rem;
     gap: 2.5rem;
   }
 
@@ -159,11 +159,11 @@ a:focus-visible {
   }
 
   .time {
-    font-size: 3.75rem;
+    font-size: 4.25rem;
   }
 
   .date {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .quote-text {
