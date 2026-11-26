@@ -17,11 +17,17 @@ body {
   background-color: #2e343c;
   color: #d5b784;
   font-family: Fraunces, serif;
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 2.25rem;
+  }
 }
 
 ul {
