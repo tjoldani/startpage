@@ -70,18 +70,18 @@ body {
 
 /* Links */
 nav ul {
-  margin: 0 20px;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 100%;
   max-width: 800px;
-  gap: 2rem;
+  margin: 0 auto;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  gap: 2rem 0.75rem;
 }
 
 li {
   text-align: center;
-  flex: 0 1 130px;
 }
 
 a {
@@ -140,6 +140,12 @@ a:focus-visible {
   body {
     font-size: 2.25rem;
     gap: 2.5rem;
+  }
+
+  nav ul {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 340px;
+    gap: 2.25rem 1rem;
   }
 
   .time {
