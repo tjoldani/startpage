@@ -14,8 +14,8 @@
 }
 
 body {
-  background-color: #2e343c;
-  color: #d5b784;
+  background-color: #2d343d;
+  color: #e2ded6;
   font-family: Fraunces, serif;
   font-size: 1.875rem;
   display: flex;
@@ -47,18 +47,18 @@ li {
 
 a {
   text-decoration: none;
-  color: #d5b784;
+  color: #dbb57c;
   transition: color 0.8s ease;
 }
 
 a:hover,
 a:focus {
-  color: #e2ded7;
+  color: #e7c796;
   outline: none;
 }
 
 a:focus-visible {
-  outline: 2px solid #e2ded7;
+  outline: 2px solid #e7c796;
   outline-offset: 4px;
   border-radius: 2px;
 }
