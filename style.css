@@ -63,7 +63,7 @@ body {
 
 .date {
   color: var(--text-soft);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin-top: 0.6rem;
 }
@@ -110,7 +110,7 @@ a:focus-visible {
 }
 
 .quote-text {
-  color: var(--ochre);
+  color: var(--text);
   font-style: italic;
   font-size: 1.1rem;
   font-weight: 400;
@@ -147,7 +147,7 @@ a:focus-visible {
   }
 
   .date {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   .quote-text {
