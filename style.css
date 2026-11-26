@@ -7,30 +7,67 @@
   src: url('./fonts/fraunces-latin.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('./fonts/fraunces-latin.woff2') format('woff2');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #2d343d;
+  --text: #e2ded6;
+  --ochre: #dbb57c;
+  --ochre-bright: #e7c796;
+  --blue: #a7c1de;
+  --sage: #a9c7a1;
+  --rose: #e0aba6;
+}
+
 body {
-  background-color: #2d343d;
-  color: #e2ded6;
+  background-color: var(--bg);
+  color: var(--text);
   font-family: Fraunces, serif;
   font-size: 1.875rem;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  gap: 3rem;
+  padding: 3rem 1.5rem;
 }
 
-@media (max-width: 600px) {
-  body {
-    font-size: 2.25rem;
-  }
+/* Clock */
+.clock {
+  text-align: center;
 }
 
-ul {
+.time {
+  color: var(--blue);
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.date {
+  color: var(--sage);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.6rem;
+}
+
+/* Links */
+nav ul {
   margin: 0 20px;
   list-style: none;
   display: flex;
@@ -47,18 +84,75 @@ li {
 
 a {
   text-decoration: none;
-  color: #dbb57c;
+  color: var(--ochre);
   transition: color 0.8s ease;
 }
 
 a:hover,
 a:focus {
-  color: #e7c796;
+  color: var(--ochre-bright);
   outline: none;
 }
 
 a:focus-visible {
-  outline: 2px solid #e7c796;
+  outline: 2px solid var(--ochre-bright);
   outline-offset: 4px;
   border-radius: 2px;
+}
+
+/* Quote */
+.quote {
+  text-align: center;
+  max-width: 620px;
+  padding: 0 1rem;
+}
+
+.quote-text {
+  color: var(--text);
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.quote-text::before {
+  content: '\201C';
+}
+
+.quote-text::after {
+  content: '\201D';
+}
+
+.quote-author {
+  color: var(--rose);
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-top: 0.75rem;
+}
+
+.quote-author::before {
+  content: '\2014\00a0';
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 2.25rem;
+    gap: 2.5rem;
+  }
+
+  .time {
+    font-size: 3.75rem;
+  }
+
+  .date {
+    font-size: 1.4rem;
+  }
+
+  .quote-text {
+    font-size: 1.3rem;
+  }
+
+  .quote-author {
+    font-size: 1rem;
+  }
 }
