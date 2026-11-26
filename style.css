@@ -96,7 +96,6 @@ li {
 
 a {
   text-decoration: none;
-  font-weight: 600;
   color: var(--ochre);
   transition: color 0.8s ease;
 }
